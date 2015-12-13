@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Key:</strong>
+  <%= @accesskey.key %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @accesskey.location %>
+</p>
+
+<p>
+  <strong>Expire at:</strong>
+  <%= @accesskey.expire_at %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @accesskey.active %>
+</p>
+
+<%= link_to 'Edit', edit_accesskey_path(@accesskey) %> |
+<%= link_to 'Back', accesskeys_path %>

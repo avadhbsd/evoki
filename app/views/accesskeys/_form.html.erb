@@ -1,0 +1,33 @@
+<%= form_for(@accesskey) do |f| %>
+  <% if @accesskey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@accesskey.errors.count, "error") %> prohibited this accesskey from being saved:</h2>
+
+      <ul>
+      <% @accesskey.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :key %><br>
+    <%= f.text_field :key %>
+  </div>
+  <div class="field">
+    <%= f.label :location_id %><br>
+    <%= f.text_field :location_id %>
+  </div>
+  <div class="field">
+    <%= f.label :expire_at %><br>
+    <%= f.text_field :expire_at %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
