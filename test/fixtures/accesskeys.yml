@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  key: MyString
+  location_id: 
+  expire_at: MyString
+  active: false
+
+two:
+  key: MyString
+  location_id: 
+  expire_at: MyString
+  active: false
