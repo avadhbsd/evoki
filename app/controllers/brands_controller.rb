@@ -29,6 +29,7 @@ class BrandsController < ApplicationController
   # POST /brands.json
   def create
     @brand = Brand.new(brand_params)
+    @brand.user = current_user
 
     respond_to do |format|
       if @brand.save
